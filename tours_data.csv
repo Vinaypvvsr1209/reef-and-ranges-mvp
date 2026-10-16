@@ -1,0 +1,6 @@
+tour_id,tour_name,date,max_capacity,booked_seats,price_aud,pickup_time,status
+RR-101,Great Barrier Reef Snorkel & Dive,2026-10-20,25,18,220,07:30 AM,Open
+RR-102,Daintree Rainforest & Cape Tribulation,2026-10-20,16,16,195,07:00 AM,Full
+RR-103,Kuranda Scenic Railway & Skyrail,2026-10-21,30,12,175,08:30 AM,Open
+RR-104,Atherton Tablelands Waterfalls Tour,2026-10-21,20,19,160,07:45 AM,Open
+RR-105,Outer Reef Sunset Cruise,2026-10-22,40,0,130,04:00 PM,Weather Hold
