@@ -1,0 +1,15 @@
+from app import check_availability, ai_faq_assistant
+
+def test_prevent_double_booking():
+    # If 18 booked out of 20, requesting 5 should fail
+    ok, msg = check_availability(booked=18, capacity=20, requested=5)
+    assert ok is False
+    assert "Double-booking prevented" in msg
+
+def test_valid_booking():
+    ok, msg = check_availability(booked=10, capacity=20, requested=4)
+    assert ok is True
+
+def test_faq_escalation():
+    resp = ai_faq_assistant("Can I charter a private helicopter?")
+    assert "Confidence Low" in resp
